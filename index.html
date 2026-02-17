@@ -3,45 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
+    <title>charity: water | Clean Water for All</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone Yippe!!</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+        <div class="overlay">
+            <h1>Every Cent Hits the Ground. See Exactly Where.</h1>
+            <p>100% of your donation goes to the field. Track your impact with GPS coordinates—because small acts shouldn’t be a leap of faith.</p>
+            <a href="#impact" class="cta-scroll">See the Proof</a>
         </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
+    <section class="story">
+        <div class="container">
+            <h2>Radical Transparency</h2>
+            <p>charity: water provides a seamless, mobile-first giving experience where 100% of your donation directly funds clean water projects. We prove every project with GPS coordinates and photos, ensuring your money hits the ground, not an administrative black hole.</p>
+        </div>
+    </section>
+
+    <section id="impact" class="impact-story">
+        <div class="impact-content">
+            <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800&q=80" alt="Community member with clean water" class="impact-image">
+            <div class="impact-text">
+                <h2>Real Impact: The Power of Proof</h2>
+                <p>When you give, you receive a tracking ID. You’ll see the exact community you helped, the coordinates of the well, and the faces of the people whose lives have changed. No guessing, just impact.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+        <h2>Join Our 20M+ Givers</h2>
+        <p>Your support can help save lives. Join a community of value-driven givers today.</p>
+        <a href="https://www.charitywater.org" class="donate-button">Donate with 100% Trust</a>
     </section>
 </body>
 </html>
+<style>
+  /* Brand Colors */
+:root {
+    --cw-yellow: #F7AD19;
+    --cw-blue: #00AEEF;
+    --cw-charcoal: #333333;
+    --cw-white: #FFFFFF;
+    --cw-light-gray: #f4f4f4;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--cw-charcoal);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section with background image */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cw-white);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Buttons and Interactions */
+.donate-button, .cta-scroll {
+    background-color: var(--cw-yellow);
+    color: var(--cw-charcoal);
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.donate-button:hover {
+    background-color: #e59a00;
+    transform: scale(1.05);
+}
+
+/* Story Section */
+.story {
+    background-color: var(--cw-white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.story h2 {
+    color: var(--cw-blue);
+    font-size: 2.5rem;
+}
+
+/* Impact Section */
+.impact-story {
+    background-color: var(--cw-light-gray);
+    padding: 60px 20px;
+}
+
+.impact-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Responsive fix */
+}
+
+.impact-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.impact-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: var(--cw-yellow);
+    color: var(--cw-white);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .impact-content { flex-direction: column; text-align: center; }
+}
+</style>
