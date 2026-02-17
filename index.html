@@ -9,7 +9,7 @@
 </head>
 <header>
     <div class="container header-container">
-        <a href="https://www.charitywater.org">
+        <a href="https://www.remove.bg/upload">
             <img src="" alt="charity: water logo" class="logo">
         </a>
     </div>
@@ -48,7 +48,7 @@
 </body>
 </html>
 <style>
-  /* Brand Colors */
+/* Brand Colors */
 :root {
     --cw-yellow: #F7AD19;
     --cw-blue: #00AEEF;
@@ -56,7 +56,23 @@
     --cw-white: #FFFFFF;
     --cw-light-gray: #f4f4f4;
 }
+/* Header and Logo Styling */
+header {
+    background-color: var(--cw-white);
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
 
+.header-container {
+    display: flex;
+    justify-content: flex-start; /* Keeps logo on the left */
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Adjust this to change the size of the logo */
+    width: auto;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -97,7 +113,7 @@ body {
 
 /* Buttons and Interactions */
 .donate-button, .cta-scroll {
-    background-color: var(--cw-darkblue);
+    background-color: var(--cw-yellow);
     color: var(--cw-charcoal);
     padding: 15px 40px;
     text-decoration: none;
@@ -153,7 +169,7 @@ body {
 
 /* Call to Action */
 .call-to-action {
-    background-color: var(--cw-yellow);
+    background-color: var(--cw-charcoal);
     color: var(--cw-white);
     padding: 80px 20px;
     text-align: center;
